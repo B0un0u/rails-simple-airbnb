@@ -1,0 +1,9 @@
+<h3>Simple Airbnb</h3>
+
+<h1>My flats</h1>
+
+<% @flats.each do |flat| %>
+<h4><%= link_to(flat.name, flat_path(flat)) %></h4>
+<% end %>
+<br> 
+<%= link_to('➕ Add a new flat', new_flat_path, class: "btn btn-primary") %>
